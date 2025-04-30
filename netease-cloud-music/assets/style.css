@@ -1,0 +1,32 @@
+.ncmusic-root {font-family:PingFangSC,Arial,sans-serif;max-width:900px;margin:40px auto 60px auto;background:#fff;border-radius:10px;box-shadow:0 4px 32px #f4f5f7;}
+.ncm-header {display:flex;align-items:flex-start;padding:32px 32px 18px 32px;}
+.ncm-album-cover img {width:150px;height:150px;object-fit:cover;border-radius:10px;box-shadow:0 2px 18px #f0eeee;}
+.ncm-album-meta {margin-left:30px;}
+.ncm-album-title {font-size:2em;margin:0 0 10px 0;font-weight:700;letter-spacing:1.7px;}
+.ncm-album-desc {color:#666;line-height:1.7;}
+.ncmusic-list {padding:0 28px;}
+.ncm-table {width:100%;border-collapse:collapse;}
+.ncm-table th,.ncm-table td{padding:10px 8px;}
+.ncm-table tr{transition:background .16s;}
+.ncm-table tr.ncmusic-row:hover, .ncm-table tr.ncmusic-row.playing {background:#fbeaea;}
+.ncmusic-no{color:#aaa;width:42px;}
+.ncmusic-song{font-weight:600;}
+.ncmusic-play-btn {background:none;border:none;cursor:pointer;color:#ec4141;}
+.ncmusic-like{color:#ec4141;cursor:pointer;margin-left:10px;}
+.ncmusic-like-num{margin-left:2px;}
+.ncmusic-play-num{color:#888;margin-left:10px;}
+.ncmusic-player{padding:20px 28px 24px 28px;margin-top:18px;background:#f9f9fb;border-radius:12px;box-shadow:0 4px 12px #f4f4f8;}
+.ncmusic-player-info{font-size:1.17em;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:12px;}
+.ncmusic-player-title{flex:1;color:#222;}
+.ncmusic-player-close{cursor:pointer;font-size:1.3em;color:#888;}
+.ncmusic-lyrics-wrap{margin-top:14px;background:#fff;border-radius:8px;padding:10px 10px 10px 14px;max-height:200px;overflow:auto;}
+.ncmusic-lyrics{font-family:Menlo,Consolas,monospace;font-size:1em;color:#444;line-height:1.95;}
+.ncmusic-lrc-line{padding:0 2px;border-radius:4px;transition:background .18s,color .18s;}
+.ncmusic-lrc-line.active{color:#ec4141;font-weight:700;background:#fde4e4;}
+@media (max-width:600px){
+.ncmusic-root{max-width:99vw;}
+.ncm-header{flex-direction:column;align-items:center;padding:18px 6vw;}
+.ncm-album-cover img{width:110px;height:110px;}
+.ncm-album-meta{margin-left:0;}
+.ncmusic-list,.ncmusic-player{padding:0 4vw;}
+}
